@@ -2,14 +2,26 @@
 
 <body>
   <h1 id="click">I have a click listener</h1>
-  <h1 id="touch">I have a touch down / mouse down listener</h1>
+  <h1 id="touch">I have a touch down listener</h1>
+  <h1 id="mouse">I have a mouse down listener</h1>
 </body>
 <script>
   const clickElement = document.getElementById("click");
   clickElement.addEventListener("click", () => {alert("Click");});
   const touchElement = document.getElementById("touch");
   touchElement.addEventListener("touchstart", () => {alert("Touch start");});
-  touchElement.addEventListener("mousedown", () => {alert("Mouse down");});
+  const mouseElement = document.getElementById("mouse")
+  mouseElement.addEventListener("mousedown", () => {alert("Mouse down");});
 </script>
+<style>
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
 </html>
