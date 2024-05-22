@@ -1,0 +1,15 @@
+<html>
+
+<body>
+  <h1 id="click">I have a click listener</h1>
+  <h1 id="touch">I have a touch down / mouse down listener</h1>
+</body>
+<script>
+  const clickElement = document.getElementById("click");
+  clickElement.addEventListener("click", () => {alert("Click");});
+  const touchElement = document.getElementById("touch");
+  touchElement.addEventListener("touchstart", () => {alert("Touch start");});
+  touchElement.addEventListener("mousedown", () => {alert("Mouse down");});
+</script>
+
+</html>
